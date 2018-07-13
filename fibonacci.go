@@ -1,4 +1,4 @@
-//https://qiita.com/hiroykam/items/fdbb68ea21e5c67b8225
+//参考URL:https://qiita.com/hiroykam/items/fdbb68ea21e5c67b8225
 
 package main
 
