@@ -23,11 +23,12 @@ func fibonacci(n int64) int64 {
 }
 
 func main() {
-    start:= time.Now()   //測定開始
-
     var i int64
     i, _ = strconv.ParseInt(os.Args[1],10, 64)
     //fmt.Println(fibonacci(i))
+
+    start:= time.Now()     //測定開始
+
     fibonacci(i)
 
     end := time.Now()      //測定終了          

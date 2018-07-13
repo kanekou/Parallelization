@@ -29,7 +29,7 @@ func (g *MyWaitGroup) Done() {
 
 func (g *MyWaitGroup) Wait() {
     g.Wg.Wait()
-    fmt.Printf("Max:%d\n", g.MaxCount)
+    //fmt.Printf("Max:%d\n", g.MaxCount)
 }
 
 func (g *MyWaitGroup) fibonacci(n int64) int64 {
@@ -62,12 +62,14 @@ func (g *MyWaitGroup) fibonacci(n int64) int64 {
 }
 
 func main() {
-    start:= time.Now()  //測定開始
  
     g := &MyWaitGroup{ Count:0, MaxCount:0 }
     var i int64
     i, _ = strconv.ParseInt(os.Args[1],10, 64)
     ch := make(chan int64)
+
+    start:= time.Now()  //測定開始
+
     g.Add()
     go func() {
         defer close(ch)
@@ -75,7 +77,8 @@ func main() {
         ch <- g.fibonacci(i)
     }()
  
-    fmt.Println(<-ch)
+    //fmt.Println(<-ch)
+    <-ch
     g.Wait()
  
     end := time.Now()   //測定完了

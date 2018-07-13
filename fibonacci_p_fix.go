@@ -74,12 +74,12 @@ func printMax(cs <-chan int64, done chan<- bool) {
 }
 
 func main() {
-    start:= time.Now()  //測定開始
- 
     g := &MyWaitGroup{ Count:0,MaxCount:0,Ch:make(chan int64,100) }
     var i int64
     i, _ = strconv.ParseInt(os.Args[1],10, 64)
  
+    start:= time.Now()  //測定開始
+
     g.Add()
     go func() {
         defer func(){
