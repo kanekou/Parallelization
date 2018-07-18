@@ -9,7 +9,7 @@
 
 引数として，項数を指定する．
 
-例:
+例: N=20
 ```
 go run fibonacci.go 20
 ```
@@ -28,7 +28,7 @@ go run fibonacci.go 20
 ```
 go run matrix.go 4
 ```
-
+___ 
 #### 並列処理
 
 第1引数に行列のサイズを，第2引数に並列度を指定する．
@@ -38,6 +38,6 @@ go run matrix.go 4
 go run matrix_p.go 4 2 
 ```
  
- ##参考サイト
+ ## 参考サイト
  - [Goでお手軽に行列の積を爆速並列計算](https://qiita.com/hamadu/items/fce4ee1e4b5c2c2d24df)
  - [Golangでゴルーチンにより再帰関数を並列処理](https://qiita.com/hiroykam/items/fdbb68ea21e5c67b8225)
