@@ -9,7 +9,7 @@ def func(n):
 
 stratTime = time.time()            
 argv = int(sys.argv[1])
-print('第{0}項={1}'.format(argv,func(argv)))
+print('第{0}項 = {1}'.format(argv,func(argv)))
 endTime = time.time() #プログラムの終了時刻
 runTime = endTime - stratTime #処理時間
-print('time={0}s'.format(round(runTime,3))) #処理時間を表示
+print('time = {0}s'.format(runTime)) #処理時間を表示
