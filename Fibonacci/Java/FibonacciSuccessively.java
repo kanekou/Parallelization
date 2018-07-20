@@ -8,8 +8,11 @@ public class FibonacciSuccessively {
         // 出力
         System.out.println("第" + args[0] + "項" + result);
         long end_time = System.nanoTime();
-        System.out.println(end_time-start_time);
-        System.out.println("time = " + (Math.pow(10,-6)*(end_time - start_time)) + " [sec]");
+//        System.out.println(end_time-start_time);
+//        System.out.println(start_time);
+//        System.out.println(end_time);
+//        System.out.println(Math.pow(10,-9));
+        System.out.println("time = " + (Math.pow(10,-9)*(end_time - start_time)) + " [sec]");
     }
     public static int func(int n) {
         if(n < 2){

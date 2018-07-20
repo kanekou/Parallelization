@@ -27,7 +27,7 @@ class FibonacciTask extends RecursiveTask<Integer> {
         ForkJoinPool pool = new ForkJoinPool();
         System.out.println("第" + args[0] + "項" +pool.invoke(new FibonacciTask(Integer.parseInt(args[0]))));
         long end_time = System.nanoTime();
-        System.out.println(end_time-start_time);
-        System.out.println("time = " + (Math.pow(10,-6)*(end_time - start_time)) + " [sec]");
+        //System.out.println(end_time-start_time);
+        System.out.println("time = " + (Math.pow(10,-9)*(end_time - start_time)) + " [sec]");
     }
 }
