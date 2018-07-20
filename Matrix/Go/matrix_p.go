@@ -83,5 +83,5 @@ func main() {
 	exeSpeed := end.Sub(start)
 	fmt.Printf("time = %.10f sec \n", exeSpeed.Seconds())
 
-	fmt.Println(ans)
+	fmt.Println(ans[0][0])
 }
