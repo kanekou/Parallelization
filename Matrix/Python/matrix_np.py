@@ -1,3 +1,5 @@
+#numpyを使用したもの
+
 import time
 import sys
 import numpy as np
