@@ -10,9 +10,9 @@ javac ./Java/FibonacciSuccessively.java ./Java/FibonacciTask.java
 number_of_terms=0;
 
 # 項数N = 5~35まで5刻みで測定
-for i in `seq 1 3`
+for i in `seq 1 7`
 do 
-    for j in `seq 1 10` # 10回測定した平均
+    for j in `seq 1 10` # 各10回測定
     do  
         number_of_terms=`expr $i \* 5`
         
@@ -47,7 +47,7 @@ done
 number_of_terms=0
 
 #平均を求める
-for i in `seq 1 3` #項数N = 5~35(5刻み)
+for i in `seq 1 7` #項数N = 5~35(5刻み)
 do
     number_of_terms=`expr $i \* 5`
    
