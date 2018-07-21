@@ -75,3 +75,4 @@ done
 
 #グラフ出力
 gnuplot fibonacci.plt
+gnuplot fibonacci_java.plt
