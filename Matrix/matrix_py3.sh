@@ -10,7 +10,7 @@ size_of_matrix=0;
 # N * N(N=100 ~ 300)の行列の実行時間を測定
 for n in `seq 1 3`
 do 
-    for i in `seq 1 1` # 10回測定した平均
+    for i in `seq 1 10` # 10回測定した平均
     do  
         size_of_matrix=`expr $n \* 100`
         thread_size=1
