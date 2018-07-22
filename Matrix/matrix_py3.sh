@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+<< COMMENTOUT
 # 以前の測定用ファイルを削除
 if ls ./Python/*.txt > /dev/null 2>&1 ;
     then rm ./Python/*.txt
@@ -7,8 +8,8 @@ fi
 
 size_of_matrix=0;
 
-# N * N(N=100 ~ 1000)の行列の実行時間を測定
-for n in `seq 1 10`
+# N * N(N=100 ~ 400)の行列の実行時間を測定
+for n in `seq 1 4`
 do 
     for i in `seq 1 10` # 10回測定した平均
     do  
@@ -31,12 +32,12 @@ do
         done    
     done
 done
-
+COMMENTOUT
 
 size_of_matrix=0
 
 #平均を求める
-for n in `seq 1 10` # N * N(N=100 ~ 1000)の行
+for n in `seq 1 4` # N * N(N=100 ~ 400)の行
 do
     size_of_matrix=`expr $n \* 100`
     thread_size=1
@@ -57,4 +58,4 @@ do
 done
 
 #グラフ出力
-gnuplot matrix_py.plt
+gnuplot matrix_py3.plt
