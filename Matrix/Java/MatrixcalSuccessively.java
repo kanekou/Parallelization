@@ -8,7 +8,7 @@ public class MatrixcalSuccessively {
             }
         }
     }
-
+    
 //行列の積を演算するメソッド
     public static void multiplication(int[][] x,  int[][] y,  int[][] z){
         for(int i = 0 ; i < z.length ; i++) {
@@ -22,10 +22,11 @@ public class MatrixcalSuccessively {
                     z[i][j] += x[i][k] * y[k][j];
                 }
             }
-        }System.out.printf("%5d", z[0][0]);
-        System.out.println("");
+        }
+        //System.out.printf("%5d", z[0][0]);
+        //System.out.println("");
     }
-
+    
     public static void main(String[] args){
         matrixSize =  Integer.parseInt(args[0]);
         long start_time = System.nanoTime();
@@ -36,6 +37,6 @@ public class MatrixcalSuccessively {
         CleateMatrix(mat_b);
         multiplication(mat_a, mat_b, ans);
         long end_time = System.nanoTime();
-        System.out.println("time = " + (Math.pow(10,-9)*(end_time - start_time)) + " [sex]");
+        System.out.printf("time = %.10f [sec]\n",(Math.pow(10,-9)*(end_time - start_time)));
     }
 }

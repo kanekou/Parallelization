@@ -8,13 +8,14 @@ fi
 javac ./Java/MatrixcalSuccessively.java ./Java/MatrixcalTask.java 
 
 size_of_matrix=0;
+loop_count=1;
 
 cd ./Java/ 
 
 # N * N(N=100 ~ 1000)の行列の実行時間を測定
 for n in `seq 1 10`
 do 
-    for i in `seq 1 1` # 10回測定した平均
+    for i in `seq 1 $loop_count` #loop_count回測定した平均
     do  
         size_of_matrix=`expr $n \* 100`
         thread_size=1
