@@ -16,7 +16,7 @@ public class MatrixcalTask extends Thread{
         }
         double end_time = System.nanoTime();
 
-        System.out.printf("time = %.10f [sex]\n",(Math.pow(10,-9)*(end_time - start_Time)));
+        System.out.printf("time = %.10f [sec]\n",(Math.pow(10,-9)*(end_time - start_Time)));
     }
 
     int me;
