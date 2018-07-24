@@ -16,7 +16,10 @@
 go run fibonacci.go 20
 ```
 
-### 実行時間計測
+### 実行時間計測結果
+
+- output_fibonacci.svg
+
 ![fibonacci数列](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
 ## 行列演算
