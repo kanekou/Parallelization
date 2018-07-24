@@ -18,11 +18,18 @@ go run fibonacci.go 20
 
 ### 実行時間計測結果
 
-- output_fibonacci.svg
+- output_fibonacci.svg : Golang,Java,Python3
 
-![fibonacci数列](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
+![fibonacci](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
-Nが上がっていくにつれ，並列化した処理が遅くなる．
+全体的にNが上がっていくにつれ，並列化した処理が遅くなる．Javaは見えないので拡大する．
+___
+
+- output_Matrix_java.svg : Java
+
+![fibonacci_java](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci_java.svg)
+
+Javaも並列化処理はNに比例して低速となる．
 
 ## 行列演算
 行列の掛け算を様々な言語で実装し、逐次処理とどのような違いがでるか検証する．
