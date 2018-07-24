@@ -10,7 +10,7 @@ def func(n):
         for j in range(n):
             for k in range(n):
                 c[i][j] += a[i][k]*b[k][j]
-    return c
+    print(c)
 
 argv = int(sys.argv[1])
 argv2 = int(sys.argv[2])
@@ -18,7 +18,7 @@ stratTime = time.time()
 if __name__ == "__main__":
     p = Pool(argv2)
     p.map(func, range(argv))
-func(argv)
 endTime = time.time() #プログラムの終了時刻
 runTime = endTime - stratTime #処理時間
 print('time = {:.10f}sec'.format(runTime)) #処理時間を表示
+p.close()
