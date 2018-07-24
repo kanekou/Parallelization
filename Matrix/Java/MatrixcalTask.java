@@ -9,9 +9,6 @@ public class MatrixcalTask extends Thread{
         for (int me = 0; me < noThreads; me++) {
             threads[me] = new MatrixcalTask(me);
             threads[me].start();
-        }
-
-        for (int me = 0; me < noThreads; me++) {
             threads[me].join();
         }
         double end_time = System.nanoTime();
@@ -28,39 +25,35 @@ public class MatrixcalTask extends Thread{
     public void run(){
 
         //generate two matrices using random numbers
-        int matrix1[][] = matrixGenerator();
-        int matrix2[][] = matrixGenerator();
+        int mat_a[][] = new int[matrixSize][matrixSize];
+        int mat_b[][] = new int[matrixSize][matrixSize];
+        CleateMatrix(mat_a);
+        CleateMatrix(mat_b);
 
         //get the number of rows from the first matrix
-        int m1rows = matrix1.length;
+        int m1rows = mat_a.length;
         //get the number of columns from the first matrix
-        int m1cols = matrix1[0].length;
+        int m1cols = mat_a[0].length;
         //get the number of columns from the second matrix
-        int m2cols = matrix2[0].length;
+        int m2cols = mat_b[0].length;
 
         //multiply the matrices and put the result in an array
-        int[][] result = new int[m1rows][m2cols];
+        int[][] ans = new int[mat_a.length][mat_b[0].length];
         for (int i = 0; i < m1rows; i++) {
             for (int j = 0; j < m2cols; j++) {
                 for (int k = 0; k < m1cols; k++) {
-                    result[i][j] += matrix1[i][k] * matrix2[k][j];
+                    ans[i][j] += mat_a[i][k] * mat_b[k][j];
                 }
             }
         }
 
     }
 
-    public static int[][] matrixGenerator() {
-        //create an array
-        int matrix[][] = new int[matrixSize][matrixSize];
-        //create a random generator
-        //and fill it with random numbers
-        //Random r = new Random();
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = 50;
+    public static void  CleateMatrix(int[][] m) {
+        for (int i = 0; i < m.length; i++) { 
+            for (int j = 0; j < m[i].length; j++) {
+                m[i][j] = 50;
             }
         }
-        return matrix;
     }
 }
