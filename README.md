@@ -50,19 +50,19 @@ go run matrix_p.go 4 2
 
 ### 実行時間計測結果
 
-- output_Matrix_go.svg
+- output_Matrix_go.svg : Golang
 
 ![matrix_go](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_go.svg)
 
-- output_Matrix_no_sequential_go.svg
+- output_Matrix_no_sequential_go.svg : Golang(逐次なし)
 
 ![matrix_go_no_sequentioal](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_no_sequential_go.svg)
 
-- output_Matrix_java.svg
+- output_Matrix_java.svg : Java
 
 ![matrix_java](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_java.svg)
 
-- output_Matrix_py3.svg
+- output_Matrix_py3.svg : Python3
 
 ![matrix_py3](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_py3.svg)
 
