@@ -47,6 +47,16 @@ go run matrix.go 4
 ```
 go run matrix_p.go 4 2 
 ```
+
+### 実行時間計測結果
+
+- output_Matrix_go.svg
+
+![matrix_go](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_go.svg)
+
+- output_Matrix_no_sequential_go.svg
+
+![matrix_go_no_sequentioal](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_no_sequential_go.svg)
  
  ## 参考サイト
  - [Goでお手軽に行列の積を爆速並列計算](https://qiita.com/hamadu/items/fce4ee1e4b5c2c2d24df)
