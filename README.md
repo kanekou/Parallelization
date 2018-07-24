@@ -22,6 +22,8 @@ go run fibonacci.go 20
 
 ![fibonacci数列](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
+Nが上がっていくにつれ，並列化した処理が遅くなる．
+
 ## 行列演算
 行列の掛け算を様々な言語で実装し、逐次処理とどのような違いがでるか検証する．
 行ごとの掛け算を並列化する．
@@ -53,6 +55,8 @@ go run matrix_p.go 4 2
 - output_Matrix_go.svg : Golang
 
 ![matrix_go](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_go.svg)
+
+逐次処理に比べて並列処理が大幅に高速化している．
 
 - output_Matrix_no_sequential_go.svg : Golang(逐次なし)
 
