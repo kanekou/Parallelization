@@ -8,11 +8,12 @@ fi
 javac ./Java/FibonacciSuccessively.java ./Java/FibonacciTask.java 
 
 number_of_terms=0;
+loop_count=1
 
 # 項数N = 5~35まで5刻みで測定
 for i in `seq 1 7`
 do 
-    for j in `seq 1 10` # 各10回測定
+    for j in `seq 1 $loop_count` # 各loop_count回測定
     do  
         number_of_terms=`expr $i \* 5`
         

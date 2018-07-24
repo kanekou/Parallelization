@@ -8,6 +8,7 @@ import (
     "sync"
     "strconv"
     "time"
+    "runtime"
 )
 
 type MyWaitGroup struct {
@@ -62,14 +63,17 @@ func (g *MyWaitGroup) fibonacci(n int64) int64 {
 }
 
 func main() {
+    //並列処理可能なCPUのコア数取得
+    cpus := runtime.NumCPU()
+    runtime.GOMAXPROCS(cpus)
  
     g := &MyWaitGroup{ Count:0, MaxCount:0 }
     var i int64
     i, _ = strconv.ParseInt(os.Args[1],10, 64)
     ch := make(chan int64)
-
+    
     start:= time.Now()  //測定開始
-
+    
     g.Add()
     go func() {
         defer close(ch)
@@ -80,6 +84,8 @@ func main() {
     //fmt.Println(<-ch)
     <-ch
     g.Wait()
+    
+    //fmt.Println(g.fibonacci(i))
  
     end := time.Now()   //測定完了
     exeSpeed := end.Sub(start)

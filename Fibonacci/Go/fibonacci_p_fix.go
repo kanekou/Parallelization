@@ -8,6 +8,7 @@ import (
     "sync"
     "strconv"
     "time"
+    "runtime"
 )
 
 type MyWaitGroup struct {
@@ -74,12 +75,16 @@ func printMax(cs <-chan int64, done chan<- bool) {
 }
 
 func main() {
+    //並列処理可能なCPUのコア数取得
+    cpus := runtime.NumCPU()
+    runtime.GOMAXPROCS(cpus) 
+ 
     g := &MyWaitGroup{ Count:0,MaxCount:0,Ch:make(chan int64,100) }
     var i int64
     i, _ = strconv.ParseInt(os.Args[1],10, 64)
  
     start:= time.Now()  //測定開始
-
+ 
     g.Add()
     go func() {
         defer func(){
@@ -98,7 +103,7 @@ func main() {
     done3 := make(chan bool,100)
     go printMax(done1, done3)
     <-done3
- 
+    
     end := time.Now()   //測定完了
     exeSpeed := end.Sub(start)
     fmt.Printf("time = %.10f sec \n",exeSpeed.Seconds())
