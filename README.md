@@ -57,6 +57,15 @@ go run matrix_p.go 4 2
 - output_Matrix_no_sequential_go.svg
 
 ![matrix_go_no_sequentioal](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_no_sequential_go.svg)
+
+- output_Matrix_java.svg
+
+![matrix_java](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_java.svg)
+
+- output_Matrix_py3.svg
+
+![matrix_py3](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_py3.svg)
+
  
  ## 参考サイト
  - [Goでお手軽に行列の積を爆速並列計算](https://qiita.com/hamadu/items/fce4ee1e4b5c2c2d24df)
