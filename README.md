@@ -76,7 +76,7 @@ ___
 
 ![matrix_py3](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_py3.svg)
 
-numpyが最も高速である．次に逐次処理となる．並列化による高速化は見られず．低速化している．
+numpyが最も高速である．次に逐次処理となる．並列化による高速化は見られず，低速化している．
 
  
  ## 参考サイト
