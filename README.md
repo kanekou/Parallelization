@@ -61,18 +61,21 @@ ___
 - output_Matrix_no_sequential_go.svg : Golang(逐次なし)
 
 ![matrix_go_no_sequentioal](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_no_sequential_go.svg)
+
 並列度4が一番高速である．
 ___
 
 - output_Matrix_java.svg : Java
 
 ![matrix_java](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_java.svg)
+
 逐次処理が最も高速である．並列化による高速化は見られない．
 ___
 
 - output_Matrix_py3.svg : Python3
 
 ![matrix_py3](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_py3.svg)
+
 numpyが最も高速である．次に逐次処理となる．並列化による高速化は見られず．低速化している．
 
  
