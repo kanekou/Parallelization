@@ -17,7 +17,7 @@ go run fibonacci.go 20
 ```
 
 ### 実行時間計測
-![Link Text](https://github.com/akiyoko/foo/wiki/images/bar.png "Title")
+![fibonacci数列](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
 ## 行列演算
 行列の掛け算を様々な言語で実装し、逐次処理とどのような違いがでるか検証する．
