@@ -13,7 +13,7 @@ MacBook Pro (Retina、13-inch、Early 2015)
 
 引数として，項数を指定する．
 
-例: N=20  
+例: N=20,Go
 ```./Fibonacci/Go/fibonacci.go```
 ```
 go run fibonacci.go 20
@@ -55,7 +55,7 @@ Javaも並列化処理はNに比例して低速となる．
 
 引数として，行列のサイズを指定する．
 
-例: 4*4行列  
+例: 4*4行列,Go
 ```./Matrix/Go/matrix.go```
 ```
 go run matrix.go 4
@@ -65,7 +65,7 @@ go run matrix.go 4
 
  第1引数に行列のサイズを，第2引数に並列度を指定する．
 
- 例: 4*4行列，並列度2  
+ 例: 4*4行列，並列度2,Go
 ```./Matrix/Go/matrix_p.go```
 ```
 go run matrix_p.go 4 2 
