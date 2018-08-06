@@ -85,7 +85,7 @@ func main() {
     <-ch
     g.Wait()
     
-    //fmt.Println(g.fibonacci(i))
+    fmt.Println(g.fibonacci(i))
  
     end := time.Now()   //測定完了
     exeSpeed := end.Sub(start)
