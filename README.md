@@ -35,7 +35,7 @@ sh fibonacci.sh
 
 ![fibonacci](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
-全体的にNが上がっていくにつれ，並列化した処理が遅くなる．並列処理よりも逐次処理の方が速くなってることがわかる．Javaは見えないので単体で測定する．
+全体的にNが上がっていくにつれ，並列化した処理が遅くなる．並列処理よりも逐次処理の方が高速である．Javaは見えないので単体で測定する．
 ___
 
 ```./fibonacci/output_Matrix_java.svg``` : Java
