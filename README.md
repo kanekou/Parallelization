@@ -22,7 +22,7 @@ go run fibonacci.go 20
 
 - 並列処理
 
-引数として，項数と並列度を指定する．
+第1引数に項数を，第2引数に並列度を指定する
 
 例: N=20，並列度2，Go  
 ```./Fibonacci/Go/fibonacci_p.go```
