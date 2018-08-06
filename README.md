@@ -14,7 +14,7 @@ MacBook Pro (Retina、13-inch、Early 2015)
 引数として，項数を指定する．
 
 例: N=20  
-```./fibonacci/fibonacci.go```
+```./Fibonacci/Go/fibonacci.go```
 ```
 go run fibonacci.go 20
 ```
@@ -24,21 +24,21 @@ go run fibonacci.go 20
 shell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
 例:各言語の実行時間測定  
-```./fibonacci/fibonacci.sh```
+```./Fibonacci/fibonacci.sh```
 ```
 sh fibonacci.sh
 ```
 
 ### 計測結果
 
-```./fibonacci/output_fibonacci.svg``` : Golang,Java,Python3
+```./Fibonacci/output_fibonacci.svg``` : Golang,Java,Python3
 
 ![fibonacci](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
 全体的にNが上がっていくにつれ，並列化した処理が遅くなる．並列処理よりも逐次処理の方が高速である．Javaは見えないので単体で測定する．
 ___
 
-```./fibonacci/output_Matrix_java.svg``` : Java
+```./Fibonacci/output_Matrix_java.svg``` : Java
 
 ![fibonacci_java](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci_java.svg)
 
@@ -56,7 +56,7 @@ Javaも並列化処理はNに比例して低速となる．
 引数として，行列のサイズを指定する．
 
 例: 4*4行列  
-```./matrix/matrix.go```
+```./Matrix/Go/matrix.go```
 ```
 go run matrix.go 4
 ```
@@ -66,7 +66,7 @@ go run matrix.go 4
  第1引数に行列のサイズを，第2引数に並列度を指定する．
 
  例: 4*4行列，並列度2  
-```./matrix/matrix_p.go```
+```./Matrix/Go/matrix_p.go```
 ```
 go run matrix_p.go 4 2 
 ```
@@ -76,34 +76,34 @@ go run matrix_p.go 4 2
 各言語ごとにshell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
 例:Go言語の実行時間測定  
-```./matrix/matrix.sh```
+```./Matrix/matrix.sh```
 ```
 sh matrix_go.sh 
 ```
 
 ### 計測結果
 
-```./matrix/output_Matrix_go.svg``` : Golang
+```./Matrix/output_Matrix_go.svg``` : Golang
 
 ![matrix_go](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_go.svg)
 
 逐次処理に比べて並列処理が大幅に高速化している．逐次なしで見てみる．
 ___
-```./matrix/output_Matrix_no_sequential_go.svg``` : Golang(逐次なし)
+```./Matrix/output_Matrix_no_sequential_go.svg``` : Golang(逐次なし)
 
 ![matrix_go_no_sequentioal](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_no_sequential_go.svg)
 
 並列度4が一番高速である．これは測定に使用したMacBook Pro (Retina、13-inch、Early 2015)が最大CPUコア数4であるためだと考えられる．
 ___
 
-```./matrix/output_Matrix_java.svg``` : Java
+```./Matrix/output_Matrix_java.svg``` : Java
 
 ![matrix_java](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_java.svg)
 
 逐次処理が最も高速である．並列化による高速化は見られない．
 ___
 
-```./matrix/output_Matrix_py3.sv```g : Python3
+```./Matrix/output_Matrix_py3.svg``` : Python3
 
 ![matrix_py3](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_py3.svg)
 
