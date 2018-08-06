@@ -119,5 +119,3 @@ output_Matrix_no_sequential_go.svgのグラフを見ると並列度4が最も高
  - [Goでお手軽に行列の積を爆速並列計算](https://qiita.com/hamadu/items/fce4ee1e4b5c2c2d24df)
  - [Golangでゴルーチンにより再帰関数を並列処理](https://qiita.com/hiroykam/items/fdbb68ea21e5c67b8225)
  - [Java oracle公式ドキュメント] (https://docs.oracle.com/javase/jp/8/docs/api/java/util/concurrent/RecursiveTask.html)
-
-また，joinなどで合流するのに時間がかかったり，負荷の均一化なども行なっていないのでそこにも遅くなった原因があると考察する．
