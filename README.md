@@ -29,14 +29,14 @@ shell scriptを実行することで，実行時間が測定され，グラフ�
 sh fibonacci.sh
 ```
 
-- ```./fibonacci/output_fibonacci.svg``` : Golang,Java,Python3
+```./fibonacci/output_fibonacci.svg``` : Golang,Java,Python3
 
 ![fibonacci](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
 全体的にNが上がっていくにつれ，並列化した処理が遅くなる．Javaは見えないので単体で測定する．
 ___
 
-- ```./fibonacci/output_Matrix_java.svg``` : Java
+```./fibonacci/output_Matrix_java.svg``` : Java
 
 ![fibonacci_java](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci_java.svg)
 
@@ -79,27 +79,27 @@ go run matrix_p.go 4 2
 sh matrix_go.sh 
 ```
 
-- ```./matrix/output_Matrix_go.svg``` : Golang
+```./matrix/output_Matrix_go.svg``` : Golang
 
 ![matrix_go](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_go.svg)
 
 逐次処理に比べて並列処理が大幅に高速化している．逐次なしで見てみる．
 ___
-- ```./matrix/output_Matrix_no_sequential_go.svg``` : Golang(逐次なし)
+```./matrix/output_Matrix_no_sequential_go.svg``` : Golang(逐次なし)
 
 ![matrix_go_no_sequentioal](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_no_sequential_go.svg)
 
 並列度4が一番高速である．これは測定に使用したMacBook Pro (Retina、13-inch、Early 2015)が最大CPUコア数4であるためだと考えられる．
 ___
 
-- ```./matrix/output_Matrix_java.svg``` : Java
+```./matrix/output_Matrix_java.svg``` : Java
 
 ![matrix_java](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_java.svg)
 
 逐次処理が最も高速である．並列化による高速化は見られない．
 ___
 
-- ```./matrix/output_Matrix_py3.sv```g : Python3
+```./matrix/output_Matrix_py3.sv```g : Python3
 
 ![matrix_py3](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_py3.svg)
 
