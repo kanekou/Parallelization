@@ -35,14 +35,14 @@ sh fibonacci.sh
 
 ![fibonacci](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
-全体的にNが上がっていくにつれ，並列化した処理が遅くなる．Javaは見えないので単体で測定する．
+全体的にNが上がっていくにつれ，並列化した処理が遅くなる．並列処理よりも逐次処理の方が速くなってることがわかる．Javaは見えないので単体で測定する．
 ___
 
 ```./fibonacci/output_Matrix_java.svg``` : Java
 
 ![fibonacci_java](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci_java.svg)
 
-Javaも並列化処理はNに比例して低速となる．全体的な並列処理よりも逐次処理の方が速くなってることがわかる．
+Javaも並列化処理はNに比例して低速となる．
 
 ## 行列演算
 行列の掛け算を様々な言語で実装し、逐次処理とどのような違いがでるか検証する．
