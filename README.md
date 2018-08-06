@@ -76,7 +76,7 @@ go run matrix_p.go 4 2
 各言語ごとにshell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
 例:Go言語の実行時間測定  
-```./Matrix/matrix.sh```
+```./Matrix/matrix_go.sh```
 ```
 sh matrix_go.sh 
 ```
