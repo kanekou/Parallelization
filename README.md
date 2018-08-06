@@ -15,7 +15,7 @@ MacBook Pro (Retina、13-inch、Early 2015)
 引数として，項数を指定する．
 
 例: N=20  
-./fibonacci/fibonacci.go
+```./fibonacci/fibonacci.go```
 ```
 go run fibonacci.go 20
 ```
