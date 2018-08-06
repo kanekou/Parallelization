@@ -80,7 +80,7 @@ sh matrix_go.sh
 
 ![matrix_go](https://github.com/e165726/Parallelization/blob/master/Matrix/output_Matrix_go.svg)
 
-逐次処理に比べて並列処理が大幅に高速化している．
+逐次処理に比べて並列処理が大幅に高速化している．逐次なしで見てみる．
 ___
 - output_Matrix_no_sequential_go.svg : Golang(逐次なし)
 
