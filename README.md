@@ -25,7 +25,7 @@ go run fibonacci.go 20
 shell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
 例:各言語の実行時間測定  
-./fibonacci/fibonacci.sh
+```./fibonacci/fibonacci.sh```
 ```
 sh fibonacci.sh
 ```
@@ -56,7 +56,7 @@ Javaも並列化処理はNに比例して低速となる．全体的な並列処
 引数として，行列のサイズを指定する．
 
 例: 4*4行列  
-./matrix/matrix.go
+```./matrix/matrix.go```
 ```
 go run matrix.go 4
 ```
@@ -66,7 +66,7 @@ go run matrix.go 4
  第1引数に行列のサイズを，第2引数に並列度を指定する．
 
  例: 4*4行列，並列度2  
- ./matrix/matrix_p.go
+```./matrix/matrix_p.go```
 ```
 go run matrix_p.go 4 2 
 ```
@@ -76,7 +76,7 @@ go run matrix_p.go 4 2
 各言語ごとにshell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
 例:Go言語の実行時間測定  
-./matrix/matrix.sh
+```./matrix/matrix.sh```
 ```
 sh matrix_go.sh 
 ```
