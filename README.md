@@ -19,7 +19,7 @@ MacBook Pro (Retina、13-inch、Early 2015)
 go run fibonacci.go 20
 ```
 
-### 実行時間計測結果
+### 実行時間計測方法
 
 shell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
@@ -28,6 +28,8 @@ shell scriptを実行することで，実行時間が測定され，グラフ�
 ```
 sh fibonacci.sh
 ```
+
+### 計測結果
 
 ```./fibonacci/output_fibonacci.svg``` : Golang,Java,Python3
 
@@ -69,7 +71,7 @@ go run matrix.go 4
 go run matrix_p.go 4 2 
 ```
 
-### 実行時間計測結果
+### 実行時間計測方法
 
 各言語ごとにshell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
@@ -78,6 +80,8 @@ go run matrix_p.go 4 2
 ```
 sh matrix_go.sh 
 ```
+
+### 計測結果
 
 ```./matrix/output_Matrix_go.svg``` : Golang
 
