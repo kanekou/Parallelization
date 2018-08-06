@@ -21,11 +21,18 @@ go run fibonacci.go 20
 
 ### 実行時間計測結果
 
+shell scriptを実行することで，実行時間が測定され，グラフ出力される．
+
+例:各言語の実行時間測定
+```
+sh fibonacci.sh
+```
+
 - output_fibonacci.svg : Golang,Java,Python3
 
 ![fibonacci](https://github.com/e165726/Parallelization/blob/master/Fibonacci/output_fibonacci.svg)
 
-全体的にNが上がっていくにつれ，並列化した処理が遅くなる．Javaは見えないので拡大する．
+全体的にNが上がっていくにつれ，並列化した処理が遅くなる．Javaは見えないので単体で測定する．
 ___
 
 - output_Matrix_java.svg : Java
@@ -61,6 +68,13 @@ go run matrix_p.go 4 2
 ```
 
 ### 実行時間計測結果
+
+shell scriptを実行することで，各言語ごとの実行時間が測定され，グラフ出力される．
+
+例:Go言語の実行時間測定
+```
+sh matrix_go.sh 
+```
 
 - output_Matrix_go.svg : Golang
 
