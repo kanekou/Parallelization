@@ -10,6 +10,7 @@ MacBook Pro (Retina、13-inch、Early 2015)
 処理速度計測のため，結果を出力するprint文はコメントアウトしている．
 
 ### 実行方法 
+- 逐次処理
 
 引数として，項数を指定する．
 
@@ -19,8 +20,17 @@ MacBook Pro (Retina、13-inch、Early 2015)
 go run fibonacci.go 20
 ```
 
-### 実行時間計測方法
+- 並列処理
 
+引数として，項数と並列度を指定する．
+
+例: N=20，並列度2，Go  
+```./Fibonacci/Go/fibonacci_p.go```
+```
+go run fibonacci_p.go 20 2
+```
+
+### 実行時間計測方法
 shell scriptを実行することで，実行時間が測定され，グラフ出力される．
 
 例:各言語の実行時間測定  
