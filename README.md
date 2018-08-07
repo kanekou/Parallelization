@@ -12,7 +12,7 @@ MacBook Pro (Retina、13-inch、Early 2015)
 ### 実行方法 
 引数として，項数を指定する．
 
-例: N=20，Go  
+例: N=20，Go(逐次)  
 ```./Fibonacci/Go/fibonacci.go```
 ```
 go run fibonacci.go 20
